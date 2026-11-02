@@ -1,0 +1,31 @@
+/* Custom Styles for Cytoscape.js Container and Interactive Tooltips */
+
+#cy {
+    height: 520px;
+    background-color: #f8fafc;
+}
+
+/* Tooltip dynamic absolute positioning styling */
+#nodeTooltip {
+    transition: opacity 0.15s ease-in-out;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+/* Cytoscape canvas edge creation active cursor */
+body.adding-edge-active #cy {
+    cursor: crosshair;
+}
+
+/* Custom scrollbars for paper inspection panel */
+#nodeDetailPanel ::-webkit-scrollbar {
+    width: 4px;
+}
+
+#nodeDetailPanel ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+#nodeDetailPanel ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 2px;
+}

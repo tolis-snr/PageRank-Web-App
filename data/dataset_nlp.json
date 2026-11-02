@@ -1,0 +1,83 @@
+{
+  "dataset_id": "nlp",
+  "name": "Natural Language Processing & LLMs",
+  "description": "Citation network of foundational deep learning architectures and language models.",
+  "nodes": [
+    {
+      "id": "P1",
+      "title": "Attention Is All You Need",
+      "abstract": "We propose the Transformer, a novel neural network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments show superior translation quality while being more parallelizable.",
+      "year": 2017
+    },
+    {
+      "id": "P2",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers",
+      "abstract": "We introduce BERT, designed to pre-train deep bidirectional representations from unlabeled text by conditioning on both left and right context in all layers. It achieves state-of-the-art results on eleven NLP tasks.",
+      "year": 2018
+    },
+    {
+      "id": "P3",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "abstract": "We explore RAG architectures combining parametric memory from pre-trained sequence-to-sequence models with non-parametric memory backed by dense vector indexes of Wikipedia for open-domain question answering.",
+      "year": 2020
+    },
+    {
+      "id": "P4",
+      "title": "Sentence-BERT: Sentence Embeddings using Siamese Networks",
+      "abstract": "We present Sentence-BERT (SBERT), a modification of pretrained BERT using siamese and triplet network structures to derive semantically meaningful sentence embeddings comparable via cosine similarity.",
+      "year": 2019
+    },
+    {
+      "id": "P5",
+      "title": "Language Models are Few-Shot Learners (GPT-3)",
+      "abstract": "We demonstrate that scaling language models greatly improves task-agnostic few-shot performance. GPT-3 achieves strong results on NLP benchmarks without fine-tuning, operating purely via in-context prompting.",
+      "year": 2020
+    },
+    {
+      "id": "P6",
+      "title": "Word2Vec: Efficient Estimation of Word Representations",
+      "abstract": "We propose two novel model architectures for computing continuous vector representations of words from vast datasets. Skip-gram and Continuous Bag-of-Words capture high-quality syntactic and semantic word relationships.",
+      "year": 2013
+    },
+    {
+      "id": "P7",
+      "title": "Exploring the Limits of Transfer Learning with T5",
+      "abstract": "We introduce a unified text-to-text framework treating every NLP task as a text-generation problem, systematically evaluating pre-training objectives, architectures, and scaling strategies across diverse benchmarks.",
+      "year": 2020
+    },
+    {
+      "id": "P8",
+      "title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach",
+      "abstract": "We present a replication study of BERT pre-training demonstrating that training the model longer, with larger batches, and removing the next-sentence prediction objective yields substantially improved downstream performance.",
+      "year": 2019
+    }
+  ],
+  "edges": [
+    {"source": "P2", "target": "P1"},
+    {"source": "P3", "target": "P1"},
+    {"source": "P3", "target": "P2"},
+    {"source": "P4", "target": "P2"},
+    {"source": "P5", "target": "P1"},
+    {"source": "P7", "target": "P1"},
+    {"source": "P8", "target": "P2"},
+    {"source": "P1", "target": "P6"}
+  ],
+  "benchmark_queries": [
+    {
+      "query": "How do self-attention mechanisms replace recurrent layers in neural machine translation?",
+      "ground_truth_relevant_ids": ["P1"]
+    },
+    {
+      "query": "Connecting sequence generative decoders with external encyclopedic search indexes to answer open domain queries",
+      "ground_truth_relevant_ids": ["P3"]
+    },
+    {
+      "query": "Evaluating semantic sentence distance in metric space using twin transformer architectures",
+      "ground_truth_relevant_ids": ["P4"]
+    },
+    {
+      "query": "Zero-shot task generalization and prompting paradigms without updating neural weights",
+      "ground_truth_relevant_ids": ["P5"]
+    }
+  ]
+}

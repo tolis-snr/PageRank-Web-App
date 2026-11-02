@@ -1,0 +1,83 @@
+{
+  "dataset_id": "astrophysics",
+  "name": "Astrophysics & Observational Cosmology",
+  "description": "Citation network of milestone discoveries in gravitational waves, black holes, and cosmic expansion.",
+  "nodes": [
+    {
+      "id": "A1",
+      "title": "Observation of Gravitational Waves from Binary Black Hole Merger",
+      "abstract": "The Advanced LIGO interferometers detected a transient gravitational-wave signal produced by the coalescence of two stellar-mass black holes, confirming Einstein general relativity in the strong-field dynamical regime.",
+      "year": 2016
+    },
+    {
+      "id": "A2",
+      "title": "First M87 Event Horizon Telescope Results: Shadow of a Black Hole",
+      "abstract": "Using a global sub-millimeter very-long-baseline interferometer array, the EHT reconstructed the first direct image of the supermassive black hole shadow in the center of the giant elliptical galaxy M87.",
+      "year": 2019
+    },
+    {
+      "id": "A3",
+      "title": "Observational Evidence for an Accelerating Universe and Dark Energy",
+      "abstract": "Observations of 16 high-redshift Type Ia supernovae demonstrate that the cosmic expansion is currently accelerating, providing direct evidence for a non-zero cosmological constant or dark energy component.",
+      "year": 1998
+    },
+    {
+      "id": "A4",
+      "title": "A Jupiter-Mass Companion to a Solar-Type Star (First Exoplanet)",
+      "abstract": "We report the discovery of a planetary companion orbiting the solar-type star 51 Pegasi, detected via high-precision Doppler radial velocity shifts, initiating the era of observational exoplanetary astronomy.",
+      "year": 1995
+    },
+    {
+      "id": "A5",
+      "title": "Inflationary Universe: A Possible Solution to Horizon Problems",
+      "abstract": "We propose an inflationary model of the early universe where an exponential supercooled expansion solves the horizon, flatness, and magnetic monopole cosmological problems within grand unified field theories.",
+      "year": 1981
+    },
+    {
+      "id": "A6",
+      "title": "The Foundation of the General Theory of Relativity (Einstein)",
+      "abstract": "We formulate the field equations of general relativity, establishing that gravity is not a Newtonian force but geometric curvature of four-dimensional spacetime induced by mass and energy distribution.",
+      "year": 1916
+    },
+    {
+      "id": "A7",
+      "title": "Measurements of Omega and Lambda from 42 High-Redshift Supernovae",
+      "abstract": "The Supernova Cosmology Project confirms the accelerated expansion of the universe, constraining matter density and vacuum energy density parameters to favor an open or spatially flat cosmological geometry.",
+      "year": 1999
+    },
+    {
+      "id": "A8",
+      "title": "Planck 2018 Results: Cosmological Parameters",
+      "abstract": "High-precision full-sky measurements of the cosmic microwave background temperature and polarization anisotropies by the Planck satellite determine fundamental cosmological parameters of the standard Lambda-CDM model.",
+      "year": 2020
+    }
+  ],
+  "edges": [
+    {"source": "A1", "target": "A6"},
+    {"source": "A2", "target": "A6"},
+    {"source": "A3", "target": "A6"},
+    {"source": "A3", "target": "A7"},
+    {"source": "A5", "target": "A6"},
+    {"source": "A7", "target": "A6"},
+    {"source": "A8", "target": "A3"},
+    {"source": "A8", "target": "A5"}
+  ],
+  "benchmark_queries": [
+    {
+      "query": "Formulating the relativistic field equations of geometric spacetime curvature for general relativity",
+      "ground_truth_relevant_ids": ["A6"]
+    },
+    {
+      "query": "Experimental verification of spacetime ripples produced by colliding black hole singularities",
+      "ground_truth_relevant_ids": ["A1"]
+    },
+    {
+      "query": "Capturing radio imaging silhouettes of supermassive gravitational sinks at galactic centers",
+      "ground_truth_relevant_ids": ["A2"]
+    },
+    {
+      "query": "Discovering an extrasolar gas giant orbiting a main sequence star using stellar radial velocity shifts",
+      "ground_truth_relevant_ids": ["A4"]
+    }
+  ]
+}

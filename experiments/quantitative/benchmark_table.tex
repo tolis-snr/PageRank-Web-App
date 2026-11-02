@@ -1,0 +1,28 @@
+% Auto-generated benchmark table for Chapter 5
+\begin{table*}[t]
+\centering
+\caption{Quantitative Evaluation of Retrieval Paradigms Across Benchmark Datasets}
+\label{tab:benchmark_results}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccc}
+\hline
+\textbf{Domain} & \textbf{Retrieval Paradigm} & \textbf{P@1} & \textbf{MRR} & \textbf{NDCG@3} & \textbf{Latency (ms)} \\
+\hline
+\multirow{4}{*}{NLP \& LLMs} & PageRank (Lexical + Authority) & 50.0\% & 0.708 & 0.783 & 201.8 \\
+ & Dense Semantic RAG & 100.0\% & \textbf{1.000} & \textbf{1.000} & 15.0 \\
+ & Hybrid (Linear Score Fusion) & 100.0\% & \textbf{1.000} & \textbf{1.000} & 15.4 \\
+ & Hybrid (Reciprocal Rank Fusion) & 100.0\% & \textbf{1.000} & \textbf{1.000} & 15.3 \\
+\hline
+\multirow{4}{*}{Medical AI} & PageRank (Lexical + Authority) & 25.0\% & 0.562 & 0.565 & 40.5 \\
+ & Dense Semantic RAG & 100.0\% & \textbf{1.000} & \textbf{1.000} & 14.5 \\
+ & Hybrid (Linear Score Fusion) & 75.0\% & 0.875 & \textbf{0.908} & 14.7 \\
+ & Hybrid (Reciprocal Rank Fusion) & 75.0\% & 0.875 & \textbf{0.908} & 17.3 \\
+\hline
+\multirow{4}{*}{Astrophysics} & PageRank (Lexical + Authority) & 50.0\% & 0.750 & 0.815 & 36.7 \\
+ & Dense Semantic RAG & 100.0\% & \textbf{1.000} & \textbf{1.000} & 16.8 \\
+ & Hybrid (Linear Score Fusion) & 75.0\% & 0.875 & \textbf{0.908} & 17.8 \\
+ & Hybrid (Reciprocal Rank Fusion) & 75.0\% & 0.875 & \textbf{0.908} & 14.7 \\
+\hline
+\end{tabular}
+}
+\end{table*}

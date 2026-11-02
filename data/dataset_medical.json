@@ -1,0 +1,83 @@
+{
+  "dataset_id": "medical",
+  "name": "Medical AI & Clinical Informatics",
+  "description": "Citation network of landmark breakthroughs in biomedical NLP, protein folding, and clinical diagnostics.",
+  "nodes": [
+    {
+      "id": "M1",
+      "title": "Highly Accurate Protein Structure Prediction with AlphaFold",
+      "abstract": "We present AlphaFold, a computational method capable of predicting 3D protein structures with atomic accuracy directly from primary amino acid sequences, solving a 50-year-old grand challenge in biology.",
+      "year": 2021
+    },
+    {
+      "id": "M2",
+      "title": "BioBERT: A Pre-trained Biomedical Language Representation Model",
+      "abstract": "BioBERT is a domain-specific language model pre-trained on large biomedical corpora from PubMed abstracts and PMC articles, outperforming standard BERT on biomedical named entity recognition and relation extraction.",
+      "year": 2020
+    },
+    {
+      "id": "M3",
+      "title": "Med-PaLM: Towards Expert-Level Medical Question Answering",
+      "abstract": "We evaluate large language models on medical licensing question benchmarks. Med-PaLM leverages instruction tuning and expert clinical consensus alignment to achieve expert-level diagnostic question-answering accuracy.",
+      "year": 2023
+    },
+    {
+      "id": "M4",
+      "title": "ClinicalBERT: Modeling Clinical Notes and Hospital Readmission",
+      "abstract": "We adapt deep language representations to clinical healthcare notes from intensive care records, accurately predicting 30-day patient hospital readmissions and clinical risk trajectories.",
+      "year": 2019
+    },
+    {
+      "id": "M5",
+      "title": "CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays",
+      "abstract": "CheXNet is a 121-layer dense convolutional neural network trained on over 100,000 frontal chest X-ray images, exceeding the average performance of board-certified radiologists in detecting pneumonia.",
+      "year": 2017
+    },
+    {
+      "id": "M6",
+      "title": "Deep Learning for Classification of Skin Cancer",
+      "abstract": "We demonstrate classification of skin lesions using a single deep neural network trained directly from clinical photographic images, matching dermatologist performance across both keratinocyte and melanoma biopsies.",
+      "year": 2017
+    },
+    {
+      "id": "M7",
+      "title": "PubMedBERT: Domain-Specific Pretraining for Biomedical NLP",
+      "abstract": "We show that domain-specific pre-training from scratch using biomedical text alone outperforms continuous pre-training of general-domain checkpoints on specialized biomedical benchmarks.",
+      "year": 2020
+    },
+    {
+      "id": "M8",
+      "title": "MIMIC-III: A Freely Accessible Critical Care Database",
+      "abstract": "MIMIC-III integrates comprehensive, de-identified clinical data from over 40,000 intensive care patients, serving as the benchmark standard for clinical machine learning and diagnostic predictive modeling.",
+      "year": 2016
+    }
+  ],
+  "edges": [
+    {"source": "M2", "target": "M7"},
+    {"source": "M3", "target": "M2"},
+    {"source": "M4", "target": "M2"},
+    {"source": "M4", "target": "M8"},
+    {"source": "M5", "target": "M8"},
+    {"source": "M3", "target": "M4"},
+    {"source": "M7", "target": "M8"},
+    {"source": "M1", "target": "M2"}
+  ],
+  "benchmark_queries": [
+    {
+      "query": "What language representations are pre-trained specifically on biomedical PubMed abstracts and PMC articles?",
+      "ground_truth_relevant_ids": ["M2"]
+    },
+    {
+      "query": "Deep learning algorithms for macromolecular folding and biological chemistry structure modeling",
+      "ground_truth_relevant_ids": ["M1"]
+    },
+    {
+      "query": "Automated computer vision detection of lung infections from thoracic radiography matching human specialists",
+      "ground_truth_relevant_ids": ["M5"]
+    },
+    {
+      "query": "Machine learning systems for classifying malignant melanoma tumors from clinical dermatology photographs",
+      "ground_truth_relevant_ids": ["M6"]
+    }
+  ]
+}

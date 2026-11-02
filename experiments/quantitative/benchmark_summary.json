@@ -1,0 +1,92 @@
+{
+  "nlp": [
+    {
+      "algorithm_name": "PageRank (Lexical + Authority)",
+      "precision_at_1": 0.5,
+      "mrr": 0.708,
+      "ndcg_at_3": 0.783,
+      "latency_ms": 201.82
+    },
+    {
+      "algorithm_name": "Dense Semantic RAG",
+      "precision_at_1": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0,
+      "latency_ms": 15.03
+    },
+    {
+      "algorithm_name": "Hybrid (Linear Score Fusion)",
+      "precision_at_1": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0,
+      "latency_ms": 15.38
+    },
+    {
+      "algorithm_name": "Hybrid (Reciprocal Rank Fusion)",
+      "precision_at_1": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0,
+      "latency_ms": 15.29
+    }
+  ],
+  "medical": [
+    {
+      "algorithm_name": "PageRank (Lexical + Authority)",
+      "precision_at_1": 0.25,
+      "mrr": 0.562,
+      "ndcg_at_3": 0.565,
+      "latency_ms": 40.52
+    },
+    {
+      "algorithm_name": "Dense Semantic RAG",
+      "precision_at_1": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0,
+      "latency_ms": 14.52
+    },
+    {
+      "algorithm_name": "Hybrid (Linear Score Fusion)",
+      "precision_at_1": 0.75,
+      "mrr": 0.875,
+      "ndcg_at_3": 0.908,
+      "latency_ms": 14.69
+    },
+    {
+      "algorithm_name": "Hybrid (Reciprocal Rank Fusion)",
+      "precision_at_1": 0.75,
+      "mrr": 0.875,
+      "ndcg_at_3": 0.908,
+      "latency_ms": 17.33
+    }
+  ],
+  "astrophysics": [
+    {
+      "algorithm_name": "PageRank (Lexical + Authority)",
+      "precision_at_1": 0.5,
+      "mrr": 0.75,
+      "ndcg_at_3": 0.815,
+      "latency_ms": 36.74
+    },
+    {
+      "algorithm_name": "Dense Semantic RAG",
+      "precision_at_1": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_3": 1.0,
+      "latency_ms": 16.81
+    },
+    {
+      "algorithm_name": "Hybrid (Linear Score Fusion)",
+      "precision_at_1": 0.75,
+      "mrr": 0.875,
+      "ndcg_at_3": 0.908,
+      "latency_ms": 17.83
+    },
+    {
+      "algorithm_name": "Hybrid (Reciprocal Rank Fusion)",
+      "precision_at_1": 0.75,
+      "mrr": 0.875,
+      "ndcg_at_3": 0.908,
+      "latency_ms": 14.69
+    }
+  ]
+}
