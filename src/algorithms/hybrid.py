@@ -1,5 +1,5 @@
 import numpy as np
-from typing import List
+from typing import List, Tuple
 from src.algorithms.pagerank import min_max_scale
 
 
